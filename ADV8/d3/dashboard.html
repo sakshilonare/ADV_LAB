@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Food Production Impact Dashboard</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("bg.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        .chart-container {
+            /* height: 100vh; */
+            /* Aligns the children items in a row direction */
+            display: grid;
+            padding: 10px;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .chart {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem;
+            border: 1px solid blue;
+            border-radius: 50px; 
+            background-color:aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+        <h1>Groundwater Extraction by District</h1>
+        <div class="chart-container">
+            <div id="bar-chart" class="chart"></div>
+            <div id="pie-chart" class="chart"></div>
+            <div id="sbar-chart" class="chart"></div>
+            <div id="scatter-plot" class="chart"></div>
+            <div id="histogram" class="chart"></div>
+        </div>
+
+
+    <!-- Include JavaScript files for each chart -->
+    <script src="barChart.js"></script>
+    <script src="pieChart.js"></script>
+    <script src="sbar.js"></script>
+    <script src="scatterPlot.js"></script>
+    <script src="hist.js"></script>
+</body>
+
+</html>
